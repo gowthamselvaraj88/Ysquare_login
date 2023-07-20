@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { Route, Routes } from "react-router-dom";
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 import IconButton from '@mui/material/IconButton';
@@ -20,7 +19,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Welcome from './Welcome';
-
+import ysquareLogo from "./ysquareLogo.png";
 
 function Login() {
 
@@ -59,23 +58,13 @@ function Login() {
     // console.log("name",name);
   };
 
-  // useEffect(() => {
-  //     navigate("/Welcome");
-  // }, [sessionStorage]);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      //redirects to an external URL
-      // window.location.replace('http://localhost:3000/Welcome');
-  }, [2000000])  
-  });
 
 
   // error
-  const handleSubmit = () => {
-    // event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     navigate('./Welcome');
-          // window.location.replace("http://localhost:3000/Welcome");
+          
 
     sessionStorage.setItem("Name", name);
     const pattern = '[a-zA-Z]'

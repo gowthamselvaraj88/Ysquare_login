@@ -1,6 +1,5 @@
 import React from 'react';
 import Welcome from './Welcome';
-// import App from './App';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Login from './Login';
 

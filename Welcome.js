@@ -17,7 +17,7 @@ const Welcome = () => {
       <div className="App">
       <header className="App-header">
       <h1>Welcome {name} !</h1>     
-       <h1>Project-1</h1></header>      
+       </header>      
     </div>
     </div>
   )
